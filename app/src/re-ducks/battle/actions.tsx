@@ -1,42 +1,20 @@
-import { Users } from '../store/initialState';
+import { PlayerSprite } from '../store/initialState';
 
-export const SIGN_IN = 'SIGN_IN';
-type SignInAction = {
+export const CHANGE_PLAYER_SPRITE_COORDINAYE = 'CHANGE_PLAYER_SPRITE_COORDINAYE';
+type ChangePlayerSpriteCoordinate = {
   type: string;
   payload: {
-    isSignedIn: boolean;
-    uid: string;
-    userName: string;
-  };
-};
-export const signInAction = (userState: Users): SignInAction => {
-  return {
-    type: 'SIGN_IN',
-    payload: {
-      isSignedIn: true,
-      uid: userState.uid,
-      userName: userState.userName,
-    },
+    x: number;
+    y: number;
   };
 };
 
-export const SIGN_OUT = 'SIGN_OUT';
-type SignOutAction = {
-  type: string;
-  payload: {
-    isSignedIn: boolean;
-    uid: string;
-    userName: string;
-  };
-};
-
-export const signOutAction = (): SignOutAction => {
+export const changePlayerSpriteCoordinate = (playerSpriteState: PlayerSprite): ChangePlayerSpriteCoordinate => {
   return {
-    type: `SIGN_OUT`,
+    type: `CHANGE_PLAYER_SPRITE_COORDINAYE`,
     payload: {
-      isSignedIn: false,
-      uid: '',
-      userName: '',
+      x: playerSpriteState.x,
+      y: playerSpriteState.y,
     },
   };
 };

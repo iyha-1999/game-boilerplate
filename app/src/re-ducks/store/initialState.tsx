@@ -1,20 +1,22 @@
 // store types
-export type Users = {
-  isSignedIn: boolean;
-  uid: string;
-  userName: string;
-};
+export type PlayerSprite = {
+  x: number;
+  y: number;
+}
 export type InitialState = {
-  users: Users;
+  battle: {
+    playerSprite:PlayerSprite
+  };
 };
 
 // stateの初期値を設定する
 const initialState: InitialState = {
-  users: {
-    isSignedIn: false,
-    uid: '',
-    userName: '',
-  },
+  battle: {
+    playerSprite: {
+      x: 0,
+      y: 0,
+    }
+  }
 };
 
 export default initialState;
