@@ -79,3 +79,28 @@ yarn add pixi.js @inlet/react-pixi
 > https://reactpixi.org/
 
 > https://pixijs.download/dev/docs/index.html
+
+
+
+### CSS Modules
+
+Electron-forgeのボイラーテンプレートに含まれている
+
+typings-for-css-modules-loaderを使用
+
+> https://www.npmjs.com/package/typings-for-css-modules-loader
+
+
+
+css modulesは型定義ファイルが必要となるため、下記プラグインで一括で型定義ファイルを生成する
+
+> https://github.com/Quramy/typed-css-modules
+
+app/src/css/components配下の全てのcssに型定義ファイルを生成するコマンドを自作した
+
+cssの更新時には下記を実行する(実行していない場合、vscode上でエラーが発生する)
+
+```
+yarn buildcss
+```
+
