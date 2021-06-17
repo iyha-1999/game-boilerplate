@@ -2,10 +2,10 @@
 export type PlayerSprite = {
   x: number;
   y: number;
-}
+};
 export type InitialState = {
   battle: {
-    playerSprite:PlayerSprite
+    playerSprite: PlayerSprite;
   };
 };
 
@@ -15,8 +15,8 @@ const initialState: InitialState = {
     playerSprite: {
       x: 0,
       y: 0,
-    }
-  }
+    },
+  },
 };
 
 export default initialState;

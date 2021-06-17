@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './css/App.global.css';
-import './css/recet.grobal.css';
+import './css/global/App.global.css';
+import './css/global/recet.grobal.css';
 import Start from './components/start';
 import Battle from './components/battle';
 

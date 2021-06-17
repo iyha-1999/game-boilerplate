@@ -8,9 +8,13 @@ const PlusButton = () => {
   const selector = useSelector((state) => state);
   console.log(selector);
   return (
-      <button type="button" className={styles.plusButton} onClick={() => dispatch(changePlayerSpriteCoordinate({x: 100,y: 100,}))}>
-        plus:100
-      </button>
+    <button
+      type="button"
+      className={styles.plusButton}
+      onClick={() => dispatch(changePlayerSpriteCoordinate({ x: 100, y: 100 }))}
+    >
+      plus:100
+    </button>
   );
 };
 
