@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "spritesmith-cli": "^1.1.2",
+    "spritesmith-texturepacker": "^1.1.0"
+  }
+}
