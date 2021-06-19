@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changePlayerSpriteCoordinate } from '../../re-ducks/battle/actions';
-import styles from '../../css/components/battle.module.css';
+import styles from '../../../css/components/battle.module.css';
 
 const PlusButton = () => {
   const dispatch = useDispatch();
