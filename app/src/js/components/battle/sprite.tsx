@@ -13,7 +13,6 @@ const Sprite = () => {
   // PIXIのTextureオブジェクト格納用配列、型宣言用
   const textureArray: Array<Texture> = [];
   const [frames, setFrames] = React.useState(textureArray);
-  // PIXI.Applicationと同じ。これを元にpixi内のデータを構築していく
   // PIXI.Applicationクラス内のload機能のみを抽出し、使用するためにインスタンスを作成している
   // TextuerPackerから吐き出される形式のメタデータを読み込み、テクスチャ配列に変換するため
   // 作成したテクスチャ配列はstateに格納する
