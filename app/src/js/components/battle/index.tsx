@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stage, Container } from '@inlet/react-pixi';
+import { Stage } from '@inlet/react-pixi';
 import PlusButton from './plusButton';
 import Sprite from './sprite';
 
